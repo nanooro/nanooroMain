@@ -26,7 +26,7 @@ function App() {
       <div className="h-screen bg-[var(--light)]" id="container">
         <div className="" id="headingWrapper">
           <h1
-            className="text-6xl font-bold bg-gradient-to-r from-red-400 via-yellow-400 to-pink-400 
+            className="text-[19vw] font-bold leading-loose bg-gradient-to-r from-red-400 via-yellow-400 to-pink-400 
         bg-[length:300%_300%] bg-clip-text text-transparent animate-moving-gradient"
           >
             Nanooro{" "}
