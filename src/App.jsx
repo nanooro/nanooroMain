@@ -1,6 +1,6 @@
 console.clear();
-const { useState } = React;
 function App() {
+  const { useState } = React;
   const [isModalOpen, setisModalOpen] = useState(false);
   return (
     <React.Fragment>
@@ -80,6 +80,59 @@ function App() {
       </div>
     );
   }
+  function ArticleFullScreenModal({}) {
+    return (
+      <div className=" w-full h-full bg-gray-500 bg-opacity-50" id="modalBg">
+        <div
+          aria-label="modal"
+          className="fixed inset-0 z-50 flex items-center justify-center  bg-black  bg-opacity-10"
+        >
+          <div className="relative w-full h-full p-10 bg-white rounded-lg">
+            <div className="absolute cursor-pointer top-5 right-5">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="w-6 h-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                onClick={() => setisModalOpen(false)}
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            </div>
+            <div>idk</div>
+          </div>
+        </div>
+        {/* <div
+          className="flex flex-col w-[100%] h-[100%] z-50 absolute top-0 mt-2 bg-white "
+          id="modal"
+        >
+  
+          ಚಳ್ಳಕೆರೆ ನಗರಸಭಾ ಅಧ್ಯಕ್ಷರಾಗಿ ಮಂಜುಳಾ ಆರ್ ಪ್ರಸನ್ನ ಕುಮಾರ್ ನೇಮಕ ಚಿತ್ರದುರ್ಗ
+          ಜಿಲ್ಲೆ ಚಳ್ಳಕೆರೆ ನಗರಸಭಾ ಅಧ್ಯಕ್ಷರಾಗಿ ಶ್ರೀಮತಿ ಮಂಜುಳಾ ಆರ್ ಪ್ರಸನ್ನ ಕುಮಾರ್
+          ರವರು ಚಿತ್ರದುರ್ಗ ಜಿಲ್ಲೆಯ ವಿವಿಧ ತಾಲೂಕುಗಳಿಂದ ಆಗಮಿಸಿದ್ದ ವಿಶ್ವಕರ್ಮ ಕುಲ ಬಾಂಧವರ
+          ಅಪಾರವಾದ ಜನಸ್ತೋಮದೊಂದಿಗೆ *ದಿನಾಂಕ 26/03/2025 ನೇ ಬುಧವಾರ ಪದವಿ ಪದಗ್ರಹಣ
+          ಸ್ವೀಕರಿಸಿದರು ಕರ್ನಾಟಕದಲ್ಲಿ ಇದೊಂದು ಇತಿಹಾಸ ಸೃಷ್ಟಿಯಾದ ದಿನ ಎಂದು ಹೇಳಬಹುದು
+          ಇದುವರೆಗೂ ವಿಶ್ವಕರ್ಮ ಸಮಾಜದ ಹೆಣ್ಣುಮಗಳು ಈ ಪದವಿಯನ್ನು ಸ್ವೀಕರಿಸಿರುವುದು ಇದೇ
+          ಮೊದಲು ಎಂದು ಹೇಳಿದರು ತಪ್ಪಾಗಲಾರದು ಈ ಒಂದು ಸುದಿನಕ್ಕೆ ನೆರೆದಿದ್ದ ಅಪಾರವಾದ ಜನರೇ
+          ಸಾಕ್ಷಿಯಾಯಿತು ಅಧ್ಯಕ್ಷರಾಗಿ ಪದವಿ ಸ್ವೀಕರಿಸಿರುವುದು ನಿಜಕ್ಕೂ ವಿಶ್ವಕರ್ಮ ಸಮಾಜವೇ
+          ಹೆಮ್ಮೆ ಪಡುವಂತಾಗಿದ್ದು ಶ್ರೀಮತಿ ಮಂಜುಳಾ ಆರ್ ಪ್ರಸನ್ ಕುಮಾರ್ ರವರಿಗೆ ರಾಜಕೀಯ
+          ಜೀವನದ ಕ್ಷೇತ್ರದಲ್ಲಿ ಇನ್ನೂ ಹೆಚ್ಚಿನ ಅಧಿಕಾರ ದೊಡ್ಡ ದೊಡ್ಡ ಹುದ್ದೆಗಳು
+          ಸಿಗುವಂತಾಗಲಿ ಹಾಗೂ ಜನಸೇವೆಯೇ ಜನಾರ್ದನ ಸೇವೆ ಎಂದು ತಿಳಿದು ಅವರು ನಡೆಯುವಂತಾಗಲಿ
+          ಎಂದು ಕರ್ನಾಟಕ ವಿಶ್ವಕರ್ಮ ಜನಸೇವಾ ಸಂಘ ಬೆಂಗಳೂರು *ರಾಜ್ಯಾಧ್ಯಕ್ಷರಾದ ಎಂ ಸೋಮಶೇಖರ್(
+          ಕನ್ನಡ ಸೋಮು) ಅತ್ತಿಬೆಲೆ. ರಾಜ್ಯ ಯುವ ಘಟಕ. ರಾಜ್ಯಾಧ್ಯಕ್ಷ ದೊಡ್ಡಬಳ್ಳಾಪುರ. ಸೋಮು
+          ವಿಶ್ವಕರ್ಮ ರಾಜ್ಯ ಪ್ರಧಾನ ಕಾರ್ಯದರ್ಶಿ ಹೊಸದುರ್ಗ ಪರಮೇಶ್ವರಚಾರ್ ಮಾರಬಘಟ್ಟ ರಾಜ್ಯ
+          ಕಾರ್ಯದರ್ಶಿ ಮಹಿಳಾ ವಿಭಾಗ ಕು.ಗಿರಿಜಾ ಸುರೇಶಚಾರ್ *ಮೆಟ್ಟಿನ ಹೊಳೆ*ಹೊಸದುರ್ಗ ಇವರು
+          ಶುಭಾಶಯ ಅಭಿನಂದನೆಗಳನ್ನು ಸಲ್ಲಿಸಿದ್ದಾರೆ
+        </div> */}
+      </div>
+    );
+  }
 }
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
@@ -99,59 +152,5 @@ function ScrollBtn({}) {
     >
       scroll
     </button>
-  );
-}
-
-function ArticleFullScreenModal({}) {
-  return (
-    <div className=" w-full h-full bg-gray-500 bg-opacity-50" id="modalBg">
-      <div
-        aria-label="modal"
-        className="fixed inset-0 z-50 flex items-center justify-center  bg-black  bg-opacity-10"
-      >
-        <div className="relative w-full h-full p-10 bg-white rounded-lg">
-          <div className="absolute cursor-pointer top-5 right-5">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="w-6 h-6"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-              onClick={setisModalOpen(false)}
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M6 18L18 6M6 6l12 12"
-              />
-            </svg>
-          </div>
-          <div>idk</div>
-        </div>
-      </div>
-      {/* <div
-        className="flex flex-col w-[100%] h-[100%] z-50 absolute top-0 mt-2 bg-white "
-        id="modal"
-      >
-
-        ಚಳ್ಳಕೆರೆ ನಗರಸಭಾ ಅಧ್ಯಕ್ಷರಾಗಿ ಮಂಜುಳಾ ಆರ್ ಪ್ರಸನ್ನ ಕುಮಾರ್ ನೇಮಕ ಚಿತ್ರದುರ್ಗ
-        ಜಿಲ್ಲೆ ಚಳ್ಳಕೆರೆ ನಗರಸಭಾ ಅಧ್ಯಕ್ಷರಾಗಿ ಶ್ರೀಮತಿ ಮಂಜುಳಾ ಆರ್ ಪ್ರಸನ್ನ ಕುಮಾರ್
-        ರವರು ಚಿತ್ರದುರ್ಗ ಜಿಲ್ಲೆಯ ವಿವಿಧ ತಾಲೂಕುಗಳಿಂದ ಆಗಮಿಸಿದ್ದ ವಿಶ್ವಕರ್ಮ ಕುಲ ಬಾಂಧವರ
-        ಅಪಾರವಾದ ಜನಸ್ತೋಮದೊಂದಿಗೆ *ದಿನಾಂಕ 26/03/2025 ನೇ ಬುಧವಾರ ಪದವಿ ಪದಗ್ರಹಣ
-        ಸ್ವೀಕರಿಸಿದರು ಕರ್ನಾಟಕದಲ್ಲಿ ಇದೊಂದು ಇತಿಹಾಸ ಸೃಷ್ಟಿಯಾದ ದಿನ ಎಂದು ಹೇಳಬಹುದು
-        ಇದುವರೆಗೂ ವಿಶ್ವಕರ್ಮ ಸಮಾಜದ ಹೆಣ್ಣುಮಗಳು ಈ ಪದವಿಯನ್ನು ಸ್ವೀಕರಿಸಿರುವುದು ಇದೇ
-        ಮೊದಲು ಎಂದು ಹೇಳಿದರು ತಪ್ಪಾಗಲಾರದು ಈ ಒಂದು ಸುದಿನಕ್ಕೆ ನೆರೆದಿದ್ದ ಅಪಾರವಾದ ಜನರೇ
-        ಸಾಕ್ಷಿಯಾಯಿತು ಅಧ್ಯಕ್ಷರಾಗಿ ಪದವಿ ಸ್ವೀಕರಿಸಿರುವುದು ನಿಜಕ್ಕೂ ವಿಶ್ವಕರ್ಮ ಸಮಾಜವೇ
-        ಹೆಮ್ಮೆ ಪಡುವಂತಾಗಿದ್ದು ಶ್ರೀಮತಿ ಮಂಜುಳಾ ಆರ್ ಪ್ರಸನ್ ಕುಮಾರ್ ರವರಿಗೆ ರಾಜಕೀಯ
-        ಜೀವನದ ಕ್ಷೇತ್ರದಲ್ಲಿ ಇನ್ನೂ ಹೆಚ್ಚಿನ ಅಧಿಕಾರ ದೊಡ್ಡ ದೊಡ್ಡ ಹುದ್ದೆಗಳು
-        ಸಿಗುವಂತಾಗಲಿ ಹಾಗೂ ಜನಸೇವೆಯೇ ಜನಾರ್ದನ ಸೇವೆ ಎಂದು ತಿಳಿದು ಅವರು ನಡೆಯುವಂತಾಗಲಿ
-        ಎಂದು ಕರ್ನಾಟಕ ವಿಶ್ವಕರ್ಮ ಜನಸೇವಾ ಸಂಘ ಬೆಂಗಳೂರು *ರಾಜ್ಯಾಧ್ಯಕ್ಷರಾದ ಎಂ ಸೋಮಶೇಖರ್(
-        ಕನ್ನಡ ಸೋಮು) ಅತ್ತಿಬೆಲೆ. ರಾಜ್ಯ ಯುವ ಘಟಕ. ರಾಜ್ಯಾಧ್ಯಕ್ಷ ದೊಡ್ಡಬಳ್ಳಾಪುರ. ಸೋಮು
-        ವಿಶ್ವಕರ್ಮ ರಾಜ್ಯ ಪ್ರಧಾನ ಕಾರ್ಯದರ್ಶಿ ಹೊಸದುರ್ಗ ಪರಮೇಶ್ವರಚಾರ್ ಮಾರಬಘಟ್ಟ ರಾಜ್ಯ
-        ಕಾರ್ಯದರ್ಶಿ ಮಹಿಳಾ ವಿಭಾಗ ಕು.ಗಿರಿಜಾ ಸುರೇಶಚಾರ್ *ಮೆಟ್ಟಿನ ಹೊಳೆ*ಹೊಸದುರ್ಗ ಇವರು
-        ಶುಭಾಶಯ ಅಭಿನಂದನೆಗಳನ್ನು ಸಲ್ಲಿಸಿದ್ದಾರೆ
-      </div> */}
-    </div>
   );
 }
