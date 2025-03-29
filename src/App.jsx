@@ -1,7 +1,7 @@
 console.clear();
 function App() {
   const { useState } = React;
-  const [isModalOpen, setisModalOpen] = useState(true);
+  const [isModalOpen, setisModalOpen] = useState(false);
   const modal1Content = `
   ಚಳ್ಳಕೆರೆ ನಗರಸಭಾ ಅಧ್ಯಕ್ಷರಾಗಿ ಮಂಜುಳಾ ಆರ್ ಪ್ರಸನ್ನ ಕುಮಾರ್ ನೇಮಕ
   ಚಿತ್ರದುರ್ಗ ಜಿಲ್ಲೆ ಚಳ್ಳಕೆರೆ ನಗರಸಭಾ ಅಧ್ಯಕ್ಷರಾಗಿ ಶ್ರೀಮತಿ ಮಂಜುಳಾ ಆರ್
