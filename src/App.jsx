@@ -22,8 +22,33 @@ function App() {
           </a>
         </p>
       </div>
+      <div
+        className="flex flex-wrap gap-2 justify-center items-center mt-12 w-full"
+        id="articlesContainer"
+      >
+        <CardComp imgUrl="./someImage.jpeg" title="ಚಿತ್ರದುರ್ಗ" />
+        <CardComp imgUrl="https://bit.ly/3zzCTUT" title="Example title" />
+        <CardComp imgUrl="https://bit.ly/3zzCTUT" title="Example title" />
+        <CardComp imgUrl="https://bit.ly/3zzCTUT" title="Example title" />
+      </div>{" "}
+      <div className="absolute  w-full h-12 mt-24" id="footer"></div>
     </div>
   );
 }
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(<App />);
+function CardComp({ imgUrl, title }) {
+  return (
+    <div aria-label="card-overlay" className="relative w-[250px] h-[300px]">
+      <img
+        src={imgUrl}
+        alt=""
+        className="object-cover w-full h-full rounded-lg"
+      />
+      <div className="absolute flex flex-col justify-center items-center p-2 bg-white rounded bottom-5 left-5 right-5 gap-y-1">
+        <h3 className="text-base font-bold">{title}</h3>
+        <span className="text-sm text-gray-400"></span>
+      </div>
+    </div>
+  );
+}
