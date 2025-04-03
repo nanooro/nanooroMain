@@ -25,7 +25,7 @@ function App() {
         >
           Nanooro
         </h1>
-        <p className="text-[5vw]" id="subHeading">
+        <p className="text-[4vw] -mt-6" id="subHeading">
           articles from{" "}
           <a
             href=""
