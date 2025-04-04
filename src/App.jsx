@@ -23,7 +23,7 @@ function App() {
             bg-clip-text text-transparent"
           id="headingH1"
         >
-          Nanooru
+          Nannuru
         </h1>
         <p className="text-[5vw] " id="subHeading">
           articles from{" "}
