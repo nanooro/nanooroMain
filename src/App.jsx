@@ -23,12 +23,12 @@ function App() {
             bg-clip-text text-transparent"
           id="headingH1"
         >
-          Nanooro
+          Nanooru
         </h1>
-        <p className="text-[4vw] " id="subHeading">
+        <p className="text-[5vw] " id="subHeading">
           articles from{" "}
           <a
-            href=""
+            href="https://www.youtube.com/channel/UCiIjpbV1aonM5F61JeiJ9gQ"
             className="font-helvatica text-purple-800 underline underline-offset-2 "
           >
             @Janapriya media
@@ -87,6 +87,18 @@ function Modal({ bannerUrl, content, onClose }) {
           className=" w-auto h-auto bg-cover rounded-lg"
         />
         <p className="text-xl font-helvatica">{content}</p>
+        <div
+          className="h-auto min-w-24  w-[80%] rounded-md p-2 m-5 shadow-xl outline"
+          id="redirection"
+        >
+          also consider visiting our channel{" "}
+          <a
+            href="https://www.youtube.com/channel/UCiIjpbV1aonM5F61JeiJ9gQ"
+            className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-pink-500"
+          >
+            @Janapriya media
+          </a>
+        </div>
         <div
           className="absolute cursor-pointer top-5 right-5"
           onClick={onClose}
