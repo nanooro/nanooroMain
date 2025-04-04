@@ -49,6 +49,26 @@
       "articleHeading": "Chikmagalur",
       "articleContent": "Chikmagalur is famous for its coffee estates and breathtaking hill stations.",
       "articleBannerUrl": "https://picsum.photos/seed/chikmagalur1/200/300"
+    },
+    {
+      "articleHeading": "Badami",
+      "articleContent": "Badami is known for its rock-cut cave temples and historical significance.",
+      "articleBannerUrl": "https://picsum.photos/seed/badami1/200/300"
+    },
+    {
+      "articleHeading": "Bijapur",
+      "articleContent": "Bijapur is famous for its historical monuments, including the Gol Gumbaz.",
+      "articleBannerUrl": "https://picsum.photos/seed/bijapur1/200/300"
+    },
+    {
+      "articleHeading": "Mangalore",
+      "articleContent": "Mangalore is a coastal city known for its beautiful beaches and seafood.",
+      "articleBannerUrl": "https://picsum.photos/seed/mangalore1/200/300"
+    },
+    {
+      "articleHeading": "Karwar",
+      "articleContent": "Karwar offers pristine beaches and a peaceful coastal experience.",
+      "articleBannerUrl": "https://picsum.photos/seed/karwar1/200/300"
     }
   ]
 }
