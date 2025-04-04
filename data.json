@@ -69,6 +69,11 @@
       "articleHeading": "Karwar",
       "articleContent": "Karwar offers pristine beaches and a peaceful coastal experience.",
       "articleBannerUrl": "https://picsum.photos/seed/karwar1/200/300"
+    },
+    {
+      "articleHeading": "Shivamogga",
+      "articleContent": "Shivamogga, known as the 'Gateway to the Western Ghats,' is home to stunning waterfalls like Jog Falls.",
+      "articleBannerUrl": "https://picsum.photos/seed/shivamogga1/200/300"
     }
   ]
 }
