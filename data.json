@@ -7,18 +7,48 @@
     },
     {
       "articleHeading": "Coorg",
-      "articleContent": "stuff 2",
+      "articleContent": "Coorg, also known as Kodagu, is famous for its coffee plantations and scenic landscapes.",
       "articleBannerUrl": "https://bit.ly/3zzCTUT"
     },
     {
       "articleHeading": "Hassan",
-      "articleContent": "stuff 3",
-      "articleBannerUrl": "./someImage.jpeg"
+      "articleContent": "Hassan is known for its rich cultural heritage and historic temples.",
+      "articleBannerUrl": "https://picsum.photos/seed/hassan1/200/300"
     },
     {
-      "articleHeading": "article 4",
-      "articleContent": "stuff 4",
-      "articleBannerUrl": "https://bit.ly/3zzCTUT"
+      "articleHeading": "Mysore",
+      "articleContent": "Mysore is famous for its royal heritage and the grand Mysore Palace.",
+      "articleBannerUrl": "https://picsum.photos/seed/mysore1/200/300"
+    },
+    {
+      "articleHeading": "Bangalore",
+      "articleContent": "Bangalore, India's Silicon Valley, is known for its IT industry and pleasant weather.",
+      "articleBannerUrl": "https://picsum.photos/seed/bangalore1/200/300"
+    },
+    {
+      "articleHeading": "Hampi",
+      "articleContent": "Hampi is a UNESCO World Heritage site filled with ancient temples and ruins.",
+      "articleBannerUrl": "https://picsum.photos/seed/hampi1/200/300"
+    },
+    {
+      "articleHeading": "Gokarna",
+      "articleContent": "Gokarna is a serene beach destination popular among backpackers and spiritual seekers.",
+      "articleBannerUrl": "https://picsum.photos/seed/gokarna1/200/300"
+    },
+    {
+      "articleHeading": "Udupi",
+      "articleContent": "Udupi is known for its Krishna temple and delicious South Indian cuisine.",
+      "articleBannerUrl": "https://picsum.photos/seed/udupi1/200/300"
+    },
+    {
+      "articleHeading": "Belur",
+      "articleContent": "Belur is home to the stunning Hoysaleswara Temple, showcasing intricate carvings.",
+      "articleBannerUrl": "https://picsum.photos/seed/belur1/200/300"
+    },
+    {
+      "articleHeading": "Chikmagalur",
+      "articleContent": "Chikmagalur is famous for its coffee estates and breathtaking hill stations.",
+      "articleBannerUrl": "https://picsum.photos/seed/chikmagalur1/200/300"
     }
   ]
 }

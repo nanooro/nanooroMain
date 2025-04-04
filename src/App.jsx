@@ -25,7 +25,7 @@ function App() {
         >
           Nanooro
         </h1>
-        <p className="text-[4vw] -mt-6" id="subHeading">
+        <p className="text-[4vw] " id="subHeading">
           articles from{" "}
           <a
             href=""
@@ -114,9 +114,17 @@ function Modal({ bannerUrl, content, onClose }) {
 function CardComp({ imgUrl, title, onClick }) {
   return (
     <div
+      tabIndex={0} // React uses camelCase (not "tabindex")
+      role="button" // Improves accessibility by indicating it's interactive
       aria-label="card-overlay"
-      className="relative w-[250px] h-[300px]"
+      className="relative w-[250px] h-[300px] cursor-pointer"
       onClick={onClick}
+      onKeyDown={(event) => {
+        if (event.key === "Enter" || event.key === " ") {
+          event.preventDefault(); // Prevents spacebar from scrolling
+          onClick();
+        }
+      }}
     >
       <img
         src={imgUrl}
