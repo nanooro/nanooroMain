@@ -19,24 +19,27 @@ function App() {
         id="heading"
       >
         <h1
-          className="text-[20.8vw] font-bold bg-gradient-to-r from-blue-600 via-pink-400 to-red-500 
-            bg-clip-text text-transparent"
+          className="text-[20.8vw] font-bold bg-gradient-to-r from-blue-400 via-pink-400 to-red-500 
+            bg-clip-text text-transparent "
           id="headingH1"
         >
           Nannuru
         </h1>
-        <p className="text-[5vw] " id="subHeading">
+        <p
+          className="text-[5vw] text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-pink-500"
+          id="subHeading"
+        >
           articles from{" "}
           <a
             href="https://www.youtube.com/channel/UCiIjpbV1aonM5F61JeiJ9gQ"
-            className="font-helvatica text-purple-800 underline underline-offset-2 "
+            className="font-helvatica    underline underline-offset-2 "
           >
             @Janapriya media
           </a>
         </p>
       </div>
       <div
-        className="flex flex-wrap gap-2 justify-center items-center mt-12 w-full"
+        className="flex flex-wrap gap-5 justify-center items-center mt-12 w-full"
         id="articlesContainer"
       >
         {selectedArticle && (
@@ -129,7 +132,7 @@ function CardComp({ imgUrl, title, onClick }) {
       tabIndex={0} // React uses camelCase (not "tabindex")
       role="button" // Improves accessibility by indicating it's interactive
       aria-label="card-overlay"
-      className="relative w-[250px] h-[300px] cursor-pointer"
+      className="relative w-[250px] h-[300px] cursor-pointer shadow-xl"
       onClick={onClick}
       onKeyDown={(event) => {
         if (event.key === "Enter" || event.key === " ") {
