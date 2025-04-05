@@ -19,7 +19,7 @@ function App() {
         id="heading"
       >
         <h1
-          className="text-[20.8vw] font-bold bg-gradient-to-r from-yellow-400 via-orange-500 to-red-500 
+          className="text-[20.8vw] font-bold bg-gradient-to-r from-blue-600 via-pink-400 to-red-500 
             bg-clip-text text-transparent"
           id="headingH1"
         >
